@@ -1,6 +1,6 @@
 package my.Level1;
 
-public class Solution {
+public class NumberStringCharacter {
 	public int solution(String s) {
 		
         int answer = 0;
@@ -15,7 +15,7 @@ public class Solution {
         return answer;
     }
 	public static void main(String[] args) {
-		Solution s = new Solution();
+		NumberStringCharacter s = new NumberStringCharacter();
 		System.out.println(s.solution("one4seveneight"));
 	}
 

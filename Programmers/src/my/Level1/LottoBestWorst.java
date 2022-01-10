@@ -1,6 +1,6 @@
 package my.Level1;
 
-class Level1LottoBestWorst {
+class LottoBestWorst {
 	public int[] solution(int[] lottos, int[] win_nums) {
 		int[] answer = {};
 		answer = new int[2];
@@ -49,7 +49,7 @@ class Level1LottoBestWorst {
 	}
 	
 	public static void main(String[] args) {
-		Level1LottoBestWorst s = new Level1LottoBestWorst();
+		LottoBestWorst s = new LottoBestWorst();
 		int[] a = { 44, 1, 0, 0, 31, 25 };
 		int[] b = { 31, 10, 45, 1, 6, 19 };
 		int[] c = s.solution(a, b);
