@@ -16,6 +16,7 @@ public class HideingPhoneNumber {
 				answer += phone_number.charAt(i);
 			}
 		}
+        //테스트
         return answer;
     }
 }
