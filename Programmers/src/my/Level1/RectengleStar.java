@@ -14,5 +14,6 @@ public class RectengleStar {
             }
             System.out.println();
         }
+        sc.close();
     }
 }
