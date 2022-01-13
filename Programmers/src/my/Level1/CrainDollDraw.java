@@ -31,8 +31,8 @@ public class CrainDollDraw {
 				if (bucket.get(i) == bucket.get(i + 1)) {
 					bucket.remove(i);
 					bucket.remove(i);
-					result += 2; //인형이 파괴 되었을 경우 2증가
-					result += remove(bucket); //인형이 파괴되면서 위에있던 인형과 만나 다시 파괴 될 수도 있으니 재귀호출
+					result += 2; // 인형이 파괴 되었을 경우 2증가
+					result += remove(bucket); // 인형이 파괴되면서 위에있던 인형과 만나 다시 파괴 될 수도 있으니 재귀호출
 				}
 			}
 		}

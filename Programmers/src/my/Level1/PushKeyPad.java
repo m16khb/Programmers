@@ -46,7 +46,7 @@ public class PushKeyPad {
 		return answer;
 	}
 
-	static boolean contain(String[] numbers, int number) { //해당 배열에 해당 숫자가 포함되어 잇는지
+	static boolean contain(String[] numbers, int number) { // 해당 배열에 해당 숫자가 포함되어 잇는지
 		for (int i = 0; i < numbers.length; i++) {
 			if (numbers[i].equals(number + ""))
 				return true;
@@ -54,7 +54,7 @@ public class PushKeyPad {
 		return false;
 	}
 
-	static int[] getXY(String[][] touch_pad, String str) { //해당 값의 이차원 배열 내에서의 좌표
+	static int[] getXY(String[][] touch_pad, String str) { // 해당 값의 이차원 배열 내에서의 좌표
 		int[] xy = { 0, 0 };
 		for (int i = 0; i < 3; i++) {
 			for (int j = 0; j < 4; j++) {

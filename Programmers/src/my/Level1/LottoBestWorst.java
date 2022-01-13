@@ -8,11 +8,11 @@ class LottoBestWorst {
 		int worst = 0;
 		for (int i = 0; i < lottos.length; i++) {
 			for (int j = 0; j < lottos.length; j++) {
-				if (lottos[i] == win_nums[j]) {//lottos와 win_nums중 같은 것이 있으면 best와 worst 둘 다 증가
+				if (lottos[i] == win_nums[j]) {// lottos와 win_nums중 같은 것이 있으면 best와 worst 둘 다 증가
 					best++;
 					worst++;
 					break;
-				} else if (lottos[i] == 0) {//lottos에 0 이 있을경우 best만 증가
+				} else if (lottos[i] == 0) {// lottos에 0 이 있을경우 best만 증가
 					best++;
 					break;
 				}
@@ -23,7 +23,7 @@ class LottoBestWorst {
 		return answer;
 	}
 
-	public static int getScore(int num) {//맞춘 개수에 따라 등수를 가져오는 메소드
+	public static int getScore(int num) {// 맞춘 개수에 따라 등수를 가져오는 메소드
 		int score = 0;
 		switch (num) {
 		case 6:
@@ -41,13 +41,13 @@ class LottoBestWorst {
 		case 2:
 			score = 5;
 			break;
-		case 1,0:
+		case 1, 0:
 			score = 6;
 			break;
 		}
 		return score;
 	}
-	
+
 	public static void main(String[] args) {
 		LottoBestWorst s = new LottoBestWorst();
 		int[] a = { 44, 1, 0, 0, 31, 25 };
