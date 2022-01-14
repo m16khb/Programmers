@@ -6,6 +6,7 @@ public class NoNumberCheck {
 		// TODO 자동 생성된 메소드 스텁
 
 	}
+	//수정
     public int solution(int[] numbers) {
         int answer = -1;
         answer++;
