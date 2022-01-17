@@ -7,7 +7,7 @@ public class XdisNnum {
 		XdisNnum s = new XdisNnum();
 		s.solution(2, 5);
 	}
-
+	//x만큼 간격이 있는 n개의 숫자
 	public long[] solution(int x, int n) {
 		long[] answer = {};
 		answer = new long[n];
