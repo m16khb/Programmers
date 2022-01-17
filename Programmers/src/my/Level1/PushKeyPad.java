@@ -1,7 +1,7 @@
 package my.Level1;
 
 public class PushKeyPad {
-
+	//키패드 누르기
 	public String solution(int[] numbers, String hand) {
 		String answer = "";
 		String[] left = { "1", "4", "7", "*" };
