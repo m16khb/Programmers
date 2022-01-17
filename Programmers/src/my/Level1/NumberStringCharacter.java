@@ -1,6 +1,7 @@
 package my.Level1;
 
 public class NumberStringCharacter {
+	//숫자 문자열과 영단어
 	public int solution(String s) {
 
 		int answer = 0;
