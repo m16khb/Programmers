@@ -15,6 +15,7 @@ public class NonCompleteAthlets {
 	}
 
 	public String solution(String[] participant, String[] completion) {
+		//완주하지 못한 선수
 		String answer = "";
 
 		// 해쉬 맵 사용
