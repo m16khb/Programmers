@@ -3,6 +3,7 @@ package my.Level1;
 import java.util.ArrayList;
 
 public class CrainDollDraw {
+// 크레인 인형뽑기 게임
 //	0 0 0 0 0
 //	0 0 1 0 3
 //	0 2 5 0 1
