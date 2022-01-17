@@ -2,6 +2,7 @@ package my.Level1;
 
 class LottoBestWorst {
 	public int[] solution(int[] lottos, int[] win_nums) {
+		//로또 최고 순위와 최저 순위
 		int[] answer = {};
 		answer = new int[2];
 		int best = 0;
