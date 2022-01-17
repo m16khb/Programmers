@@ -9,6 +9,7 @@ public class MatrixSum {
 	}
 
 	public int[][] solution(int[][] arr1, int[][] arr2) {
+		//행렬의 덧셈
 		int[][] answer = {};
 		answer = new int[arr1.length][arr1[0].length];
 
