@@ -15,7 +15,6 @@ public class GetDeclarationResult {
 		GetDeclarationResult gdr = new GetDeclarationResult();
 		String[] a = { "muzi", "frodo", "apeach", "neo" };
 		String[] b = { "muzi frodo","apeach frodo","frodo neo","muzi neo","apeach muzi" };
-		int[] num = gdr.solution(a, b, 2);
 	}
 
 	// 신고 결과 받기
