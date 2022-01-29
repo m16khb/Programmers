@@ -15,17 +15,20 @@ public class DartGame {
 	public int solution(String dartResult) {
 		int answer = 0;
 
-		Pattern p = Pattern.compile("([0-9]+[SDT]+[*#]*)");
-		Matcher m = p.matcher(dartResult);
+		Pattern p = Pattern.compile("([0-9]+[SDT]+[*#]*)"); //정규식을 통해 0-9 숫자가 한개이상 포함되고 SDT 중 한개이상의 문자가 포함되고 *#중 0개 이상 포함되는 패턴 생성
+		Matcher m = p.matcher(dartResult); //해당 패턴을 통해 문자열 추출
 
 		ArrayList<String> strarr = new ArrayList<>();
 
+		//추출된 문자열들을 리스트 형태로 변경
 		while (m.find()) {
 			strarr.add(m.group());
 		}
 
+		//계산을 starPrize 계산을 용이하게 하기 위해 거꾸로 정렬
 		Collections.reverse(strarr);
 
+		//계산
 		int starPrize = 0;
 		for (String token : strarr) {
 			StringBuilder str = new StringBuilder();
