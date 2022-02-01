@@ -51,6 +51,7 @@ public class KakaoFriendsColoringBook {
 		return map;
 	}
 
+	//이미 계산된 영역을 지워주기
 	public int[][] deletePicture(int[][] picture, int[][] map) {
 		for (int i = 0; i < picture.length; i++) {
 			for (int j = 0; j < picture[0].length; j++) {
@@ -62,6 +63,7 @@ public class KakaoFriendsColoringBook {
 		return picture;
 	}
 
+	//남은 영역의 시작 좌표 얻기
 	public int[] position(int[][] picture) {
 		int[] xy = null;
 		boolean flag = false;
@@ -79,6 +81,7 @@ public class KakaoFriendsColoringBook {
 		return xy;
 	}
 	
+	//색칠된 영역의 크기
 	public int mapSize(int[][] map) {
 		int size = 0;
 		
