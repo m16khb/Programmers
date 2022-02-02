@@ -9,7 +9,13 @@ public class TakeGroupPhoto {
 
 	public int solution(int n, String[] data) {
 		int answer = 0;
+		
+		
 
 		return answer;
+	}
+	
+	public void DFS() {
+		
 	}
 }
