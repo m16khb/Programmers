@@ -1,8 +1,8 @@
 package my.Level2;
 
 public class TakeGroupPhoto {
-	String[] friends;
-	int answer;
+	int answer = 0;
+	String[] friends = new String[] { "A", "C", "F", "J", "M", "N", "R", "T" };
 
 	public static void main(String[] args) {
 		TakeGroupPhoto tgp = new TakeGroupPhoto();
@@ -10,9 +10,6 @@ public class TakeGroupPhoto {
 	}
 
 	public int solution(int n, String[] data) {
-		answer = 0;
-		friends = new String[] { "A", "C", "F", "J", "M", "N", "R", "T" };
-
 		boolean[] isInLine = new boolean[8];
 		DFS(data, isInLine, "");
 
@@ -20,7 +17,7 @@ public class TakeGroupPhoto {
 	}
 
 	public void DFS(String[] data, boolean[] isInLine, String inputNames) {
-		if (inputNames.length() == 8) {
+		if (inputNames.length() == 7) {
 			if (checkCondition(inputNames, data)) {
 				answer++;
 			}
@@ -38,26 +35,25 @@ public class TakeGroupPhoto {
 	}
 
 	public boolean checkCondition(String inputNames, String[] data) {
-		boolean flag = true;
-
-		
 		for (String condition : data) {
 			int n = inputNames.indexOf(condition.charAt(0));
 			int m = inputNames.indexOf(condition.charAt(2));
-			if(condition.charAt(3) == '=') {
-				if(Math.abs(n - m) != (Character.getNumericValue(condition.charAt(4)) + 1))
-					flag = false;
+			char op = condition.charAt(3);
+			int index = Character.getNumericValue(condition.charAt(4));
+			if(op == '=') {
+				if(Math.abs(n - m) != index + 1)
+					return false;
 			}
-			else if(condition.charAt(3) == '<') {
-				if(Math.abs(n - m) >= (Character.getNumericValue(condition.charAt(4)) + 1))
-					flag = false;
+			else if(op == '<') {
+				if(Math.abs(n - m) >= index  + 1)
+					return false;
 			}
-			else if(condition.charAt(3) == '>') {
-				if(Math.abs(n - m) <= (Character.getNumericValue(condition.charAt(4)) + 1))
-					flag = false;
+			else if(op == '>') {
+				if(Math.abs(n - m) <= index +1)
+					return false;
 			}
 		}
 
-		return flag;
+		return true;
 	}
 }
